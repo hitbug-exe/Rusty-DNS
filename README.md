@@ -5,11 +5,17 @@ The Rusty DNS Server is a robust DNS server built in Rust that offers a range of
 # Features [Currently Implemented]
 
 -DNS server that responds to standard DNS queries
+
 -Finds the client IP address for incoming requests
+
 -Counts the number of requests processed
+
 -Rolls a die (1-6)
+
 -Tosses a coin (heads or tails)
+
 -Converts epoch/unix timestamps to human-readable form
+
 -Provides usable IP ranges for a given IP address prefix
 
 # Installation
@@ -26,10 +32,15 @@ Once the server is running, you can use any standard DNS query tool to query the
 To access the handy utilities, you can use the following special domain names:
 
 -myip.mentisnovae.tech: Returns the client IP address
+
 -counter.mentisnovae.tech: Returns the number of requests processed
+
 -dice.mentisnovae.tech: Rolls a die and returns a number between 1-6
+
 -coin.mentisnovae.tech: Tosses a coin and returns either "heads" or "tails"
+
 -time.<epoch_time>.mentisnovae.tech: Converts an epoch/unix timestamp to human-readable form (e.g. time.1618757690.mentisnovae.tech would return -"2021-04-18 10:28:10 UTC")
+
 -cidr.<ip_address>.<prefix_length>.mentisnovae.tech: Returns the usable IP range for a given IP address prefix (e.g. -cidr.192.0.2.0.24.mentisnovae.tech would return "192.0.2.1 - 192.0.2.254")
 
 # References
